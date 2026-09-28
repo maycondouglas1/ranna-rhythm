@@ -1,0 +1,20 @@
+[
+  {
+    "id": "pixel",
+    "official_bpm": 144,
+    "estimated_bpm": 145,
+    "transient_phase": 0.03
+  },
+  {
+    "id": "cipher",
+    "official_bpm": 150,
+    "estimated_bpm": 150.0,
+    "transient_phase": 0.035
+  },
+  {
+    "id": "pamgaea",
+    "official_bpm": 94,
+    "estimated_bpm": 94.0,
+    "transient_phase": 0.195
+  }
+]

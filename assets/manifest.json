@@ -1,0 +1,96 @@
+{
+  "game": "Ranna Rhythm",
+  "visualDirection": "docs/art-direction.md",
+  "images": [
+    {
+      "id": "band-source",
+      "path": "assets/band-source.png",
+      "size": [1536, 1024],
+      "source": "Built-in image_gen, 2026-09-28, four user-provided conversation references",
+      "rights": "Generated from personal references supplied by the user; respect subjects' likeness permissions when sharing",
+      "prompt": "assets/generation-prompt.txt",
+      "alpha": true,
+      "status": "Generated output inspected and alpha verified; no in-game visual inspection at user preference"
+    },
+    {
+      "id": "ranna",
+      "path": "public/art/ranna.webp",
+      "source": "band-source",
+      "crop": [0, 0, 588, 1024],
+      "height": 640,
+      "pivot": [0.5, 0.055],
+      "collision": "none",
+      "states": ["idle with procedural dance"],
+      "filtering": "linear",
+      "colorSpace": "sRGB",
+      "alpha": true
+    },
+    {
+      "id": "maycon",
+      "path": "public/art/maycon.webp",
+      "source": "band-source",
+      "crop": [588, 0, 508, 1024],
+      "height": 640,
+      "pivot": [0.5, 0.055],
+      "collision": "none",
+      "states": ["idle with procedural dance"],
+      "filtering": "linear",
+      "colorSpace": "sRGB",
+      "alpha": true
+    },
+    {
+      "id": "cebolinha",
+      "path": "public/art/cebolinha.webp",
+      "source": "band-source",
+      "crop": [1096, 0, 440, 1024],
+      "height": 640,
+      "pivot": [0.5, 0.055],
+      "collision": "none",
+      "states": ["idle with procedural dance"],
+      "filtering": "linear",
+      "colorSpace": "sRGB",
+      "alpha": true
+    }
+  ],
+  "music": [
+    {
+      "title": "Pixel Peeker Polka - faster",
+      "artist": "Kevin MacLeod",
+      "path": "public/music/pixel.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Pixel%20Peeker%20Polka%20-%20faster.mp3",
+      "page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100833",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "catalogBpm": 144,
+      "measuredBpm": 145,
+      "offset": 0.03
+    },
+    {
+      "title": "Cipher",
+      "artist": "Kevin MacLeod",
+      "path": "public/music/cipher.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cipher2.mp3",
+      "page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100844",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "catalogBpm": 150,
+      "measuredBpm": 150,
+      "offset": 0.035
+    },
+    {
+      "title": "Pamgaea",
+      "artist": "Kevin MacLeod",
+      "path": "public/music/pamgaea.mp3",
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Pamgaea.mp3",
+      "page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300036",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "catalogBpm": 94,
+      "measuredBpm": 94,
+      "offset": 0.195
+    }
+  ],
+  "musicEdits": "First 90 seconds; fade from 87 to 90 seconds; MP3 160 kbps. Timing estimated from transients; listening/play validation not performed.",
+  "licenseVerification": "https://incompetech.com/agent-section/; catalog-wide CC BY 4.0 terms verified 2026-09-28.",
+  "proceduralAssets": "Garden, stage, moon, trees and hearts in src/stage.ts; UI in HTML/CSS; hit tones synthesized with Web Audio."
+}
