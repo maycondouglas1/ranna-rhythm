@@ -15,9 +15,9 @@ const $ = <T extends HTMLElement = HTMLElement>(selector: string) =>
 const symbols = ["♡", "✦", "☾", "♬"];
 const colors = ["#f59bbc", "#e7c267", "#aa9aea", "#79cdc2"];
 const difficultyNames = {
-  easy: "De boa",
-  normal: "No ritmo",
-  hard: "Superstar",
+  easy: "Izi",
+  normal: "Balanceado",
+  hard: "Super Ranna",
 };
 type RecordEntry = {
   score: number;
@@ -497,7 +497,7 @@ $(".dialog-close").onclick = () =>
 
 $("#how-to").onclick = () =>
   openDialog(
-    `<span class="eyebrow">SEU PRIMEIRO SHOW</span><h2>É só sentir a música.</h2><ol class="instructions"><li>Escolha uma música e sua dificuldade. “De boa” tem menos notas para começar.</li><li>As notas descem em quatro pistas. Toque no botão correspondente quando a nota alcançar o círculo da linha.</li><li>No computador, use <b>D · F · J · K</b>. No celular, use os dois polegares nos quatro botões.</li><li>Acertos seguidos aumentam o combo. Você pode terminar o show mesmo errando.</li></ol><p>Som atrasado no Bluetooth? Ajuste a sincronização em ⚙. Comece com +100 ms.</p>`,
+    `<span class="eyebrow">SEU PRIMEIRO SHOW</span><h2>É só sentir a música.</h2><ol class="instructions"><li>Escolha uma música e sua dificuldade. “Izi” tem menos notas para começar.</li><li>As notas descem em quatro pistas. Toque no botão correspondente quando a nota alcançar o círculo da linha.</li><li>No computador, use <b>D · F · J · K</b>. No celular, use os dois polegares nos quatro botões.</li><li>Acertos seguidos aumentam o combo. Você pode terminar o show mesmo errando.</li></ol><p>Som atrasado no Bluetooth? Ajuste a sincronização em ⚙. Comece com +100 ms.</p>`,
   );
 $("#settings").onclick = () => {
   if (mode === "playing" || mode === "paused" || mode === "loading") {
