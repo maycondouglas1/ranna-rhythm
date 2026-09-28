@@ -1,4 +1,3 @@
-import "./style.css";
 import { Sound } from "./audio";
 import {
   APPROACH,
@@ -9,6 +8,7 @@ import {
   type Grade,
 } from "./rhythm";
 import type { Stage } from "./stage";
+import "./style.css";
 
 const $ = <T extends HTMLElement = HTMLElement>(selector: string) =>
   document.querySelector<T>(selector)!;
@@ -534,7 +534,7 @@ $("#album").onclick = () => {
     Object.keys(saved.records).some((key) => key.startsWith(`${t.id}-`)),
   ).length;
   openDialog(
-    `<span class="eyebrow">NOSSO ÁLBUM · ${completed}/3 MÚSICAS JOGADAS</span><h2>A melhor banda é a nossa.</h2><div class="album-grid"><article><img src="/art/ranna.webp" alt="Ranna com vestido floral e microfone"><h3>Ranna</h3><p>A estrela de todos os palcos. E do meu universo.</p></article><article><img src="/art/maycon.webp" alt="Maycon de óculos tocando keytar"><h3>Maycon</h3><p>Player 2, tecladista e seu fã em tempo integral.</p></article><article><img src="/art/cebolinha.webp" alt="Cebolinha, gato branco e tigrado"><h3>Cebolinha</h3><p>Diretor de fofura. Recebe cachê em sachê.</p></article></div><p class="album-message">Para a minha player 2 favorita.<br>Com amor, Maycon. ♡</p>`,
+    `<span class="eyebrow">NOSSO ÁLBUM · ${completed}/3 MÚSICAS JOGADAS</span><h2>A melhor banda é a nossa.</h2><div class="album-grid"><article><img src="/art/ranna.webp" alt="Ranna com vestido floral e microfone"><h3>Ranna</h3><p>A pessoa mais especial do meu mundo.</p></article><article><img src="/art/maycon.webp" alt="Maycon de óculos tocando keytar"><h3>Maycon</h3><p>Player 2, guitarrista e seu namorado que te ama muiito.</p></article><article><img src="/art/cebolinha.webp" alt="Cebolinha, gato branco e tigrado"><h3>Cebolinha</h3><p>Diretor de fofura. Recebe salário em sachê.</p></article></div><p class="album-message">Para a minha pitoquinha.<br>Com amor, Maycon. ♡</p>`,
   );
 };
 $("#credits").onclick = () => {
